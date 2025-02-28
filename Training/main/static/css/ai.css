@@ -7,6 +7,7 @@
 }
 :root {
   --transition-d: 0.3s;
+  scroll-behavior: smooth;
 }
 .container {
   padding-left: 15px;
@@ -65,7 +66,7 @@ header .container .logo:hover {
 header .container nav {
   padding: 10px 20px;
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 header .container nav a {
   color: #007bff;
@@ -75,17 +76,29 @@ header .container nav a {
 header .container nav a:hover {
   color: #00ff7f;
 }
+@media (max-width: 767px) {
+  header .container nav {
+    padding: 5px 10px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  header .container nav a {
+    color: #007bff;
+    transition: var(--transition-d);
+    font-size: 14px;
+    width: calc(50% - 10px);
+    text-align: center;
+  }
+}
 @media (max-width: 600px) {
   header .container {
     flex-direction: column;
   }
   header .container .logo {
     padding: 5px 10px;
-  }
-  header .container nav {
-    padding: 5px 10px;
-    width: 100%;
-    justify-content: space-around;
   }
 }
 /* Sections */
@@ -170,8 +183,7 @@ main section:not(:last-child) {
   content: "-";
   position: absolute;
   left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 8%;
 }
 @media (max-width: 767px) {
   .what-is .info p,
@@ -223,8 +235,7 @@ main section:not(:last-child) {
   content: "-";
   position: absolute;
   left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 8%;
 }
 @media (max-width: 767px) {
   .changing-industries h2 {
