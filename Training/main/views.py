@@ -14,3 +14,11 @@ def css_introduction(request:HttpRequest):
 # Build 
 def home_view(request:HttpRequest):
   return render(request, "main/index.html")
+
+# Ai Page 
+def ai_article_view(request:HttpRequest):
+  return render(request, "main/ai.html")
+
+# Cv Page 
+def cv_view(request:HttpRequest):
+  return render(request, "main/cv.html")
