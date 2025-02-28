@@ -1,0 +1,102 @@
+body {
+    background-color: #f4f4f4;
+    background-image: url('../images/css.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9b0c0c;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+
+
+  section {
+    position: relative;
+    margin-top: 80px; 
+    padding: 2em;
+    background-color: white;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    border: 5px solid rgb(241, 16, 87);
+    margin: 50px auto;
+    background-color: rgb(12, 183, 240);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.box p {
+    margin: 0;
+    color: #333;
+}
+
+/* 1️⃣ Coordinate all elements h1 */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* 2️⃣ Formatting a paragraph containing a specific class */
+.special-text {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 3️⃣ Format an item containing a specific ID */
+#main-box {
+    display: block !important;
+    background-color: rgb(0, 255, 132);
+    color: black;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+
+/* 4️⃣ Use the global selector (*) to apply formatting to all elements */
+* {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f24c4c;
+}
+
+.item {
+    background-color: #ff6600;
+    color: rgb(9, 9, 9);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    flex: 1;
+}
