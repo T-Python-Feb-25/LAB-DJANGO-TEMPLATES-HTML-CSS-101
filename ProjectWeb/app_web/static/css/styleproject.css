@@ -1,0 +1,60 @@
+/* general setting*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* coordination header*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Format a partition "About Me" */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: white;
+    margin: 50px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image format*/
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+/* text format*/
+.profile h2, .bio h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* button format*/
+.contact-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
