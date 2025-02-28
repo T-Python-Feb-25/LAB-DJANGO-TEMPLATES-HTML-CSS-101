@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(to left,rgb(224, 93, 130),rgb(95, 231, 95));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    border-style:dashed;
+    border-radius: 10px;
+    border-width: 3px;
+    border-bottom-style: dotted;
+}

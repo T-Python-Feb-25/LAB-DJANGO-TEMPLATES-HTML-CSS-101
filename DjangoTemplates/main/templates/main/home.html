@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Django lab template html-css </h1>
+        <hr>
+        <div>
+        <p>pages are</p>
+        <ul>
+            <li><a href="{% url 'lab1_view' %}"> Lab1:HTML </a></li>
+            <li><a href="{%url 'lab2_view'%}">lab2:CSS</a></li>
+            <li><a href="#">lab3:AI</a></li>
+            <li><a href="#">lab4:CV</a></li>
+        </ul>
+    </div>
+</body>
+</html>
