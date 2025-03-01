@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+    color: white;
+    text-align: center;
+    height: 8rem;
+    padding: 2rem;
+}
+body{
+    background-color: #f4f4f9;
+}
+main{
+    background-color: white;
+    margin: 0 auto;
+    width: 60%;
+    padding: 2rem;
+    margin-top: 1.2rem;
+    border-radius: 1rem;
+}
+h3{
+    color: #1d4ed8;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+section  h4{
+    padding-top: 0.8rem;
+    font-size: 1.1rem;
+}
+section  p{
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+}
+.contactinfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imgpro{
+    max-width: 15rem;
+}

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>test1</h1>
+    <p><form></form>
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <input type="color" placeholder="color">
+    <input type="time" placeholder="time">
+</p>
+<h1>test2</h1>
+<p>
+<form>
+    <p>
+<label for="username">Enter a username</label>
+<input type="text" id="username" placeholder="username">
+</p>
+<label for="password">Enter a password</label>
+<input type="password" id="password" placeholder="username">
+</form>
+</p>
+<h1>test3</h1>
+<p><form action="{%url 'main:learn_view'%}">
+    <input type="text">
+    <button>sumbit</button>
+</form></p>
+<a href="{%url 'main:learn_view'%}">oqwod</a>
+</body>
+</html>

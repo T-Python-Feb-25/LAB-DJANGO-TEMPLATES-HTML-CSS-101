@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f4f4f9;
+}
+.main{
+    background-color:white ;
+    width: 50%;
+    margin: 0 50%;
+    text-align: center;
+}
+.main_logo{
+    width: 30rem;
+}
+.main_text {
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin: 2rem auto 0px;
+    border-radius: 1rem;
+}
+.text{
+    text-align: left;
+    line-height: 2rem;
+    margin: 2rem;
+}
+thead {
+    font-weight: bold;
+    color: white;
+    background: rgb(41, 128, 185);
+}
+table {
+    width: 93%;
+    height: 20rem;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+table th{
+    background-color: inherit;
+    padding: 1.2rem;
+}
+tbody tr:nth-child(2n){
+    background-color: rgb(242, 242, 242);
+}
+tbody tr:hover{
+    background-color: azure;
+}
+table td{
+    border-bottom: 0.05rem grey solid;
+    text-align: left;
+    padding: 1.2rem;
+}
+.scorer{
+    text-align: left;
+    margin: 2rem;
+    line-height: 4rem;
+
+
+}
+.scorer ol{
+    margin-left: 3rem;
+
+}
+.scorer img{
+    width: 4rem;
+}
+.favourite{
+    text-align: left;
+    margin: 2rem;
+    line-height: 4rem;
+
+
+}
+.favourite ul{
+    margin-left: 3rem;
+
+}
+.favourite img{
+    width: 4rem;
+}
