@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite team Real madrid</title>
+    <h2>information of Real Madrid</h2>
+</head>
+<body>
+    <h2>about Real Madrid</h2>
+    <dl>
+        <dt>Country</dt>
+        <dd>- spain</dd>
+        <dt>Founded</dt>
+        <dd>- 6 march 1902</dd>
+        <dt>official anthem</dt>
+        <dd><a href="https://www.youtube.com/watch?v=Yc-7IQqcqeM">Hala Madrid y nada mas</a></dd>
+        <dt>Currently playing</dt>
+        <dd>- LaLiga </dd>
+        <dd><img src="{% static 'image/laliga.jpg' %}" width="100"></dd>
+        <dt>Stadium name</dt>
+        <dd>- Santiago Bernabeu</dd>
+        <dd><img src="{% static 'image/Santiago Bernabeu.jpg' %}" width="400"></dd>
+    </dl>
+    <h2>Logo History</h2>
+    <br>
+    <table>
+        <tr>
+            <th>Yers</th>
+            <th>Logo</th>
+        </tr>
+        <tr>
+            <td>1902-1907</td>
+            <td><img src="{% static 'image/logo_1902.jpg' %}" alt=""></td>
+        </tr>
+        <tr>
+            <td>1908-1919</td>
+            <td><img src="{% static 'image/logo_1908.jpg' %}" alt=""></td>
+        </tr>
+        <tr>
+            <td>1920-1930</td>
+            <td><img src="{% static 'image/logo_1920.jpg' %}" alt=""></td>
+        </tr>
+        <tr>
+            <td>1931-2000</td>
+            <td><img src="{% static 'image/logo_1931.jpg' %}" alt=""></td>
+        </tr>
+        <tr>
+            <td>2001-now</td>
+            <td><img src="{% static 'image/logo_2001.jpg' %}" alt=""></td>
+        </tr>
+    </table>
+    <h2>Trophies</h2>
+    <Table>
+        <Tr>
+            <th>Competition</th>
+            <th>Titles</th>
+        </Tr>
+        <tr>
+            <td>LaLiga</td>
+            <td>36 Title</td>
+        </tr>
+        <tr>
+            <td>Copa del Rey</td>
+            <td>20 Title</td>
+        </tr>
+        <tr>
+            <td>Supercopa de España</td>
+            <td>13 Title</td>
+        </tr>
+        <tr>
+            <td>UEFA Champions League</td>
+            <td>15 Title</td>
+        </tr>
+        <tr>
+            <td>UEFA Cup</td>
+            <td>2 Title</td>
+        </tr>
+        <tr>
+            <td>UEFA Super Cup</td>
+            <td>6 Title</td>
+        </tr>
+        <tr>
+            <td>FIFA club World Cup</td>
+            <td>5 Title</td>
+        </tr>
+        <tr>
+            <td>Intercontinental Cup</td>
+            <td>3 Title</td>
+        </tr>
+        <tr>
+            <td>FIFA Intercontinental Cup</td>
+            <td>1 Title</td>
+        </tr>
+    </Table>
+    <h2>Records and statistics</h2>
+    <dl>
+        <dt>Most appearances </dt>
+        <dd>1 - Raúl González (741 appearances)</dd>
+        <dd>2 - Iker Casillas (725 appearances)</dd>
+        <dd>3 - Manolo Sanchís (709 appearances)</dd>
+        <dt>Most goal scorer</dt>
+        <dd>1 - Cristiano Ronaldo (450 goals)</dd>
+        <dd>2 - Karim Benzema (354 goals)</dd>
+        <dd>3 - Raúl González (323 goals)</dd>
+        <dt>Most assist</dt>
+        <dd>1 - Michel (167 assist)</dd>
+        <dd>2 - Karim Benzema (165 assist)</dd>
+        <dd>3 - Raúl González (135 assist)</dd>
+    </dl>
+    <br>
+    <h2>Are you a Real Madrid fan?</h2>
+    <form>
+        <input type="radio" id="Yes" name="fan" value="Yes">
+        <label for="Yes"> Yes </label>
+        <br>
+        <input type="radio" id="No" name="fan" value="No">
+        <label for="No">No</label>
+    </form>
+</body>
+</html>

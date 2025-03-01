@@ -1,0 +1,29 @@
+.head{
+    text-align: center;
+}
+.about{
+    font-size:larger;
+    font-weight: bold;
+    
+}
+
+table{
+    width: 50%;
+}
+th , td{
+    margin: 100px;
+    padding: 15px;
+    border-style: solid;
+    text-align: center;
+    font-size: larger;
+}
+th {
+    background-color: #003366;
+    color: white;
+}
+h2{
+    color: blue;
+}
+.input{
+    font-size: larger;
+}

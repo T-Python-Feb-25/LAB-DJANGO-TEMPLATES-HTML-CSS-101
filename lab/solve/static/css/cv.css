@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.about {
+    text-align: center;
+    padding: 20px;
+}
+
+.about h1 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.about a {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about a:hover {
+    background: #005bb5;
+}
+
+
+.education, .projects, .skills, .Certifications, .lang {
+    padding: 15px;
+    border-bottom: 2px solid white;
+}
+
+.education h2, .projects h2, .skills h2, .Certifications h2,.lang h2 {
+    color: #444;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #0073e6;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+.lang h3 {
+    color: #0073e6;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+    }
+
+    .skills li {
+        display: block;
+        text-align: center;
+    }
+}
