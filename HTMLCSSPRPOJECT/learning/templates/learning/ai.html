@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link href="/static/css/aicss.css" rel="stylesheet">
+    <title>AI page</title>
+</head>
+<body>
+<h1>Mini Project</h1>
+<h1>AI</h1>
+    <form class="wrapper">
+    <nav class="navbar">
+        <a href="{% url 'learning:HTML_view' %}">HTML</a>
+        <a href="{% url 'learning:CSS_view' %}">CSS</a>
+        <a href="{% url 'learning:AI_view' %}">AI Article</a>
+        <a href="{% url 'learning:CV_view' %}">CV</a>
+    </nav>
+    </form>
+    <br><br>
+
+<div class="container">
+    <h1>Artificial Intelligence (AI)</h1>
+    <section>
+        <p>Artificial Intelligence (AI) is a broad branch of computer science that focuses on a machine’s capability to produce rational behavior from external inputs. The goal of AI is to create systems that can perform tasks that would otherwise require human intelligence. AI manifests itself in everyday life via virtual assistants, search prediction technology, and even ride-hailing services.</p>
+        <img src="{% static 'image/aijpg.jpg' %}" width="900" height="400" alt="AI Image">
+    </section>
+
+    <h1>Types of Artificial Intelligence</h1>
+
+    <section>
+        <h2>Reactive Machines</h2>
+        <p>Reactive machines perceive present external information and plan actions accordingly. They perform specialized duties and only understand the task at hand. The behavior is consistent in repeated situations. In the 1990s, IBM developed a reactive machine named Deep Blue to play competitive chess, predicting chess moves by identifying each piece’s board placement.</p>
+    </section>
+
+    <section>
+        <h2>Limited Memory</h2>
+        <p>Limited memory machines can harness recent observations to make informed decisions. These machines consider observational data in reference to their pre-programmed conceptual framework. The data is retained for a limited period and then forgotten.</p>
+    </section>
+
+    <section>
+        <h2>Theory of Mind</h2>
+        <p>Theory of mind machines can form thoughts and make decisions in reference to emotional context, enabling social interaction. While still in development, many AI applications exhibit aspects of human-like capability. For example, voice assistant applications can comprehend basic speech prompts but cannot hold a conversation.</p>
+    </section>
+
+    <section>
+        <h2>Self-Awareness</h2>
+        <p>Self-aware machines demonstrate intelligent behavior through ideation, formation of desires, and understanding internal states. In 1950, Alan Turing developed the Turing Test to identify machines that could behave indistinguishably from a human.</p>
+        <img src="{% static 'image/artificial-intelligence1.png' %}" width="800" height="300" alt="Artificial Intelligence">
+    </section>
+
+    <h1>Artificial Intelligence’s Increasing Relevance</h1>
+
+    <section>
+        <h2>How is Machine Learning Achieved?</h2>
+        <p>Machine learning allows AI to improve itself, similar to how humans learn through experience. For instance, a child learns to ride a bike through trial and error rather than theoretical knowledge. Similarly, AI models improve through repeated simulation.</p>
+    </section>
+
+    <section>
+        <h2>Types of Machine Learning</h2>
+        <h3>Supervised Learning</h3>
+        <p>Supervised learning is the most common method. A machine derives functions from labeled input-output pairs. Regression is used for numerical data, while classification is used for categorical data. If the model provides incorrect results, adjustments are made to improve accuracy.</p>
+
+        <h3>Unsupervised Learning</h3>
+        <p>Unsupervised learning transforms data into useful information through clustering and association. Clustering groups similar variables, while association finds correlations. Data mining relies on these techniques to filter large datasets.</p>
+
+        <h3>Reinforcement Learning</h3>
+        <p>Reinforcement learning enables AI to learn through rewards and penalties. J.P. Morgan, for example, employs reinforcement learning algorithms for trading by rewarding or penalizing decisions based on outcomes.</p>
+    </section>
+
+    <h1>Future Impact of Artificial Intelligence</h1>
+
+    <section>
+        <h2>Impact on Productivity</h2>
+        <p>AI enhances economic productivity, benefiting both customers and businesses. In the airline industry, AI optimizes flight scheduling for safety and efficiency. For instance, Delta Airlines uses machine learning to analyze aircraft positions, weather conditions, and diagnostics for improved scheduling.</p>
+    </section>
+
+    <section>
+        <h2>Impact on Employment</h2>
+        <p>AI’s expansion creates high-paying jobs but may automate low-skill jobs, increasing unemployment among less-educated workers. Critics argue that AI could reinforce systemic discrimination by disproportionately affecting minority workers.</p>
+    </section>
+
+    <section>
+        <h2>Impact on Competition</h2>
+        <p>Companies integrating AI can optimize their businesses for competitive advantages. Early adopters benefit the most, but as AI's economic benefits surpass costs, more companies will embrace it. For example, a toy manufacturer using AI in its supply chain can reduce costs and offer lower-priced products to gain market share.</p>
+    </section>
+</div>
+<div class="resources">
+    <h3>Additional Resources</h3>
+    <ul>
+      <li><a href="https://corporatefinanceinstitute.com/resources/data-science/bots-bard-and-chatgpt/?_gl=1*ygydik*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA_Yq-BhC9ARIsAA6fbAjHlcDn3-cIVVBvaDbQb0hPsxa4ZO94_G7scA5offRHOTcNr0-dlk0aAnYBEALw_wcB&gbraid=0AAAAAoJkId6mUtcXKTPWdwzjPoRpwY8kK" target="_blank">Artificial Intelligence in Finance and Banking</a></li>
+      <li><a href="https://corporatefinanceinstitute.com/resources/commercial-lending/will-chatgpt-be-my-banker/?_gl=1*ygydik*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA_Yq-BhC9ARIsAA6fbAjHlcDn3-cIVVBvaDbQb0hPsxa4ZO94_G7scA5offRHOTcNr0-dlk0aAnYBEALw_wcB&gbraid=0AAAAAoJkId6mUtcXKTPWdwzjPoRpwY8kK" target="_blank">Will ChatGPT Be My Banker?</a></li>
+      <li><a href="https://corporatefinanceinstitute.com/resources/elearning/finance-chatgpt/?_gl=1*ygydik*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA_Yq-BhC9ARIsAA6fbAjHlcDn3-cIVVBvaDbQb0hPsxa4ZO94_G7scA5offRHOTcNr0-dlk0aAnYBEALw_wcB&gbraid=0AAAAAoJkId6mUtcXKTPWdwzjPoRpwY8kK" target="_blank">How Finance and Banking Professionals Can Use ChatGPT</a></li>
+    </ul>
+    <h3>Original Article</h3>
+    <ul>
+    <li><a href="https://corporatefinanceinstitute.com/resources/data-science/artificial-intelligence-ai/?utm_source=x&utm_medium=cpc&utm_campaign=PMax_SA&utm_term=&utm_content=&utm_matchtype=&utm_device=c&utm_ad=&gad_source=1&gbraid=0AAAAAoJkId6mUtcXKTPWdwzjPoRpwY8kK&gclid=Cj0KCQiA_Yq-BhC9ARIsAA6fbAjHlcDn3-cIVVBvaDbQb0hPsxa4ZO94_G7scA5offRHOTcNr0-dlk0aAnYBEALw_wcB">Artificial Intelligence (AI)</a></li>
+</ul>
+    <footer>
+        <h3>Written by</h3>
+        <ul>
+            <li><a href="https://corporatefinanceinstitute.com/about-cfi/?_gl=1*1j8q9h3*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA_Yq-BhC9ARIsAA6fbAjHlcDn3-cIVVBvaDbQb0hPsxa4ZO94_G7scA5offRHOTcNr0-dlk0aAnYBEALw_wcB&gbraid=0AAAAAoJkId6mUtcXKTPWdwzjPoRpwY8kK">CFI Team</a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+</body>
+</html>

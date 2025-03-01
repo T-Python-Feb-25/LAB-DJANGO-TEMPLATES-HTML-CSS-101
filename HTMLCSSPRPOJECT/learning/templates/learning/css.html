@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link href="/static/css/CssStyle.css" rel="stylesheet">
+
+    <title>CSS page</title>
+</head>
+<body>
+<h1>Mini Project</h1>
+<h1>CSS</h1>
+<form class="wrapper">
+    <nav class="navbar">
+        <a href="{% url 'learning:HTML_view' %}">HTML</a>
+        <a href="{% url 'learning:CSS_view' %}">CSS</a>
+        <a href="{% url 'learning:AI_view' %}">AI Article</a>
+        <a href="{% url 'learning:CV_view' %}">CV</a>
+    </nav>
+    </form>
+    <br><br>
+
+<div class="movie">
+
+    <img src="{% static 'image/InsideOut2Poster.jpg' %}" width="200" height="300" alt="Inside Out 2 Poster">
+    <div class="text">
+        <h2>Inside Out 2</h2>
+<h4>story:</h4>
+    <p> The sequel to Pixar's acclaimed "Inside Out," this animated film continues to explore the emotions inside the mind of a growing child.</p>
+    <ul>
+  <li>Awards Won
+  <ul>
+      <li>NAACP Image Award for Outstanding Animated Motion Picture</li>
+    </ul>
+  </li>
+  <li>
+    Oscar Nominations:
+    <ul>
+      <li>Best Animated Feature</li>
+      <li>Best Original Screenplay</li>
+    </ul>
+  </li>
+    <li>
+    more information about the movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt22022452/" target="_blank">Inside Out 2 on IMDB</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/inside_out_2" target="_blank">Inside Out 2 on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+         </div>
+    </div>
+    <br><br>
+<div class="movie">
+
+<img src="{% static 'image/TheSubstancePoster.jpg' %}" width="200" height="300" alt="The Substance Poster">
+<div class="text">
+    <h2>The Substance</h2>
+    <h4>Story:</h4>
+<p>"The Substance" is a horror film directed by Coralie Fargeat, delving into body horror and psychological themes.</p>
+<ul>
+  <li>Awards Won:
+    <ul>
+      <li>Golden Globe Award for Best Actress – Demi Moore</li>
+      <li>SAG Award for Outstanding Performance by a Female Actor – Demi Moore</li>
+      <li>Critics' Choice Award for Best Horror Movie</li>
+    </ul>
+  </li>
+  <li>Oscar Nominations:
+    <ul>
+      <li>Best Picture</li>
+      <li>Best Actress – Demi Moore</li>
+      <li>Best Director – Coralie Fargeat</li>
+    </ul>
+  </li>
+  <li>More Information About the Movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt17526714/" target="_blank">The Substance on IMDb</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/the_substance" target="_blank">The Substance on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+    <br><br>
+</div></div>
+<div class="movie">
+<img src="{% static 'image/TheWildRobotPoster.jpg' %}" width="200" height="300" alt="The Wild Robot Poster">
+<div class="text">
+    <h2>The Wild Robot</h2>
+
+    <h4>Story:</h4>
+<p>An animated film about an intelligent robot named Roz, who learns to survive on an uninhabited island by bonding with the island's animals.</p>
+<ul>
+  <li>Awards Won:
+    <ul>
+      <li>Critics' Choice Award for Best Animated Feature</li>
+      <li>Producers Guild Award for Best Animated Feature</li>
+    </ul>
+  </li>
+  <li>Oscar Nominations:
+    <ul>
+      <li>Best Animated Feature</li>
+      <li>Best Original Score</li>
+    </ul>
+  </li>
+  <li>More Information About the Movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt29623480/" target="_blank">The Wild Robot on IMDb</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/the_wild_robot" target="_blank">The Wild Robot on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+    <br><br>
+</div></div>
+<div class="movie">
+
+<img src="{% static 'image/ARealPainPoster.jpg' %}" width="200" height="300" alt="A Real Pain Poster">
+<div class="text">
+
+    <h2>A Real Pain</h2><h4>Story:</h4>
+<p>Directed by Jesse Eisenberg, "A Real Pain" is a drama that explores deep emotional connections and personal struggles.</p>
+<ul>
+  <li>Awards Won:
+    <ul>
+      <li>SAG Award for Outstanding Performance by a Male Actor – Kieran Culkin</li>
+    </ul>
+  </li>
+  <li>Oscar Nominations:
+    <ul>
+      <li>Best Original Screenplay</li>
+      <li>Best Supporting Actor – Kieran Culkin</li>
+    </ul>
+  </li>
+  <li>More Information About the Movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt21823606/" target="_blank">A Real Pain on IMDb</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/a_real_pain" target="_blank">A Real Pain on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+    <br><br>
+</div></div>
+<div class="movie">
+
+<img src="{% static 'image/WickedPoster.jpg' %}" width="200" height="300" alt="Wicked Poster">
+<div class="text">
+
+    <h2>Wicked</h2>
+
+    <h4>Story:</h4>
+<p>A musical adaptation that brings the untold story of the witches of Oz to the big screen, capturing the magic of the Broadway sensation.</p>
+<ul>
+  <li>Awards Won:
+    <ul>
+      <li>Critics' Choice Award for Best Production Design – Nathan Crowley, Lee Sandales</li>
+      <li>BAFTA Award for Best Production Design</li>
+    </ul>
+  </li>
+  <li>Oscar Nominations:
+    <ul>
+      <li>Best Picture</li>
+      <li>Best Production Design</li>
+      <li>Best Costume Design</li>
+      <li>Best Original Song</li>
+    </ul>
+  </li>
+  <li>More Information About the Movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt1262426/" target="_blank">Wicked on IMDb</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/wicked_2024" target="_blank">Wicked on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+    <br><br>
+</div></div>
+<div class="movie">
+
+<img src="{% static 'image/dune2pposter.jpg' %}" width="200" height="300" alt="Dune Part Two Poster">
+<div class="text">
+
+    <h2>Dune: Part Two</h2>
+
+    <h4>Story:</h4>
+<p>The epic continuation of Denis Villeneuve's adaptation of Frank Herbert's science fiction masterpiece, "Dune: Part Two" delves deeper into the saga of Paul Atreides.</p>
+<ul>
+  <li>Awards Won:
+    <ul>
+      <li>Critics' Choice Award for Best Visual Effects – Paul Lambert, Stephen James, Rhys Salcombe, Gerd Nefzer</li>
+      <li>BAFTA Award for Best Cinematography</li>
+    </ul>
+  </li>
+  <li>Oscar Nominations:
+    <ul>
+      <li>Best Picture</li>
+      <li>Best Visual Effects</li>
+      <li>Best Cinematography</li>
+      <li>Best Original Score</li>
+    </ul>
+  </li>
+  <li>More Information About the Movie:
+    <ul>
+      <li><a href="https://www.imdb.com/title/tt1160419/" target="_blank">Dune: Part Two on IMDb</a></li>
+      <li><a href="https://www.rottentomatoes.com/m/dune_part_two" target="_blank">Dune: Part Two on Rotten Tomatoes</a></li>
+    </ul>
+  </li>
+</ul>
+</div></div>
+
+</body>
+</html>

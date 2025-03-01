@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link href="/static/css/cvcss.css" rel="stylesheet">
+    <title>CV page</title>
+</head>
+<body>
+<h1>Mini Project</h1>
+<h1>CV</h1>
+
+
+    <form class="wrapper">
+    <nav class="navbar">
+        <a href="{% url 'learning:HTML_view' %}">HTML</a>
+        <a href="{% url 'learning:CSS_view' %}">CSS</a>
+        <a href="{% url 'learning:AI_view' %}">AI Article</a>
+        <a href="{% url 'learning:CV_view' %}">CV</a>
+    </nav>
+    </form>
+    <br><br>
+<form class="container">
+    <section>
+        <h1 class="name">Dhuha Alshehri</h1>
+        <p class="namep" >Computer Science Graduate | Software Developer</p>
+    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:alshehriduha7@gmail.com">alshehriduha7@gmail.com</a></p>
+            <p>Phone: +966 559396308</p>
+            <p>Location: Riyadh, Saudi Arabia</p>
+            <a href="/static/files/DhuhaAlshehri.pdf" class="btn" download>Download CV</a>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor of Computer Science - Princess Nourah Bint Abdulrahman University (2020 - 2024)</p>
+        </section>
+    <section id="experience">
+    <h2>Experience</h2>
+
+    <div>
+        <h3>Cooperative Trainee - Saudi Electricity Company</h3>
+        <p><strong>Duration:</strong> Aug 2024 – Nov 2024</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+            <li>Worked on AI projects to optimize energy efficiency.</li>
+            <li>Developed mobile applications to enhance customer experience.</li>
+            <li>Assisted in network management and cybersecurity tasks.</li>
+        </ul>
+    </div>
+    </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>SQL</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Breast Cancer Tumor Classification Using Deep Learning</strong>
+            <p>Developed a **mobile app** using **CNNs (Convolutional Neural Networks)** to classify breast cancer tumors from ultrasound images, achieving **99.35% accuracy**. The app features a user-friendly interface for **uploading images, generating risk assessments, and connecting with healthcare professionals** to support early detection and diagnosis.</p>
+        </li>
+
+        <li>
+            <strong>Online Kids' Store Database (SQL)</strong>
+            <p>Designed and implemented a **relational SQL database** for an online kids' store. Created **structured tables, defined relationships, and optimized queries** for efficient data management, ensuring smooth operation of the store.</p>
+        </li>
+
+        <li>
+            <strong>Women’s Sportswear App UI Design</strong>
+            <p>Developed a **user-friendly UI/UX design** for a mobile app focused on **women’s sportswear**. Created interactive prototypes and designs using specialized tools, ensuring an **intuitive and visually appealing user experience**.</p>
+        </li>
+
+        <li>
+            <strong>Event Booking Ticket System (C#)</strong>
+            <p>Developed a **C# application** for managing **scientific event bookings**, including **registration, ticket allocation, and event filtering**. Applied **OOP principles** for structured handling, ensuring **data validation, error handling, and efficient tracking of attendance limits**.</p>
+        </li>
+
+        <li>
+            <strong>Heart Failure Risk Prediction Using Machine Learning (R)</strong>
+            <p>Developed a **heart failure risk prediction model** using clinical records in **R Studio**. Applied **logistic regression, data cleaning, feature engineering, hypothesis testing, and correlation analysis** to generate predictive insights.</p>
+        </li>
+    </ul>
+</section>
+
+
+        <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+        <li>Oracle Academy: Database Foundations</li>
+        <li>FutureX: Automated Software Testing - Unit Testing, Coverage Criteria, and Design for Testability</li>
+        <li>Satr: Python</li>
+        <li>Tuwaiq Academy: Cloud Computing Engineer</li>
+        <li>Coursera: Python for Data Science, AI & Development</li>
+    </ul>
+</section>
+    <section id="language">
+                <h2>Language</h2>
+            <ul>
+            <li>Arabic</li>
+            <li>English</li>
+
+             </ul>
+    </section>
+    </form>
+</body>
+</html>
