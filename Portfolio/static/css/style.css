@@ -9,6 +9,15 @@ body {
     height: 100vh; /* Full page height */
 }
 
+/* Fixed Size Card */
+.fixed-size-card {
+    width: 500px; /* Set the fixed width */
+    height: 300px; /* Set the fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Navbar Styling */
 nav {
     background-color: #ffffff;
@@ -122,25 +131,25 @@ header .btn:hover {
 
 /* Footer Section */
 footer {
-    background-color: #0f2d4e; /* Dark blue footer */
-    color: white;
-    padding: 40px 20px; /* Increased padding for better spacing */
+    background-color: #056ede; /* Dark blue footer */
+    color: white; /* White text color */
+    padding: 10px 5px; /* Reduced padding for a smaller footer */
     text-align: center;
-    margin-top: 40px; /* Add margin above the footer */
+    margin-top: 20px; /* Reduced margin above the footer */
     position: relative; /* Position relative for additional styling */
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
-    margin-bottom: 10px; /* Add margin below paragraphs */
+    font-size: 0.8rem; /* Reduced font size */
+    margin-bottom: 5px; /* Reduced margin below paragraphs */
 }
 
 footer a {
-    color: white;
+    color: white; /* White text color */
     text-decoration: none;
     transition: color 0.3s ease;
-    margin: 0 10px; /* Add margin between links */
+    margin: 0 5px; /* Reduced margin between links */
 }
 
 footer a:hover {
@@ -148,13 +157,13 @@ footer a:hover {
 }
 
 footer .social-icons {
-    margin-top: 20px; /* Add margin above social icons */
+    margin-top: 10px; /* Reduced margin above social icons */
 }
 
 footer .social-icons a {
-    color: white;
-    font-size: 1.5rem; /* Larger icon size */
-    margin: 0 10px; /* Add margin between icons */
+    color: white; /* White text color */
+    font-size: 1.2rem; /* Reduced icon size */
+    margin: 0 5px; /* Reduced margin between icons */
     transition: color 0.3s ease;
 }
 
