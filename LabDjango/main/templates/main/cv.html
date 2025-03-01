@@ -1,0 +1,87 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cv.css' %}"/>
+
+</head>
+  <body>
+    <header >
+        <h1>Abdulrahman aidarous</h1>
+          <p>Computer Science</p>
+  
+      </header>
+      
+      <main>
+        <div class="contactinfo">
+        <div class="img">
+            <img src="{%static 'images\profile.jpg'%}"  alt="Profile img" class="profile"/>
+          </div>
+          <div class="Contact" >
+            <h4 >Contact Information</h4>
+            <p >
+              <strong>Phone:</strong> 0542254514
+            </p>
+            <p >
+              <strong>Email:</strong> <a href="mailto:abdulrahmanaid.21@gmail.com">abdulrahmanaid.21@gmail.com</a>
+            </p>
+            <p >
+              <strong>Location:</strong> Riyadh, Saudi Arabia
+            </p>
+            <p >
+              <strong>GitHub:</strong> <a href="https://github.com/abdulrahman043/">https://github.com/abdulrahman043/</a>
+            </p>
+          </div>
+        </div>
+    </div>
+        <hr />
+    
+        <div class="cv">
+            <section class="summry">
+                <h3>Summary</h3>
+                <p>Graduated in Computer Science from King Saud University, with strong skills in Python,Django framework, and Java. Passionate about technology, committed to continuous learning and innovation. As a fresh graduate, eager to contribute effectively in the field of Computer Science.</p>
+            </section>
+            <section class="Project">
+                <h3>Project</h3>
+                <h4>AutoGraphear (Graduation Project)</h4>
+                <p>An advanced tool empowering network designers with a user-friendly interface and intelligent algorithms for optimized network solutions, built using Python Flask for the backend and React for the frontend.</p>
+            </section>
+            <section class="Education">
+                <h3>Education</h3>
+                <h4>King Saud Univeristy - Bachelor 2019-2024</h4>
+                <p>Computer Sicience</p>
+            </section>
+            <section class="Skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages: Python,Java</li>
+                    <li>Django Framework </li>
+                    <li>Adaptability & Continuous Learning </li>
+                    <li>Problem Solving & Teamwork</li>
+                    <li>Communication & Collaboration</li>
+
+                </ul>
+            </section>
+            <section class="Languages">
+                <h3>Languages</h3>
+                <h4>King Saud Univeristy - Bachelor 2019-2024</h4>
+                <ul>
+                    <li>English</li>
+                    <li>Arabic</li>
+                    
+
+                </ul>
+                        </section>
+           
+
+        </div>
+
+
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
