@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <h1>this is main page</h1>
+    <h2>if you need task 1</h2>
+    <a href="{% url 'solve:task1' %}"> task 1 </a>
+    <h2>if you need task 2</h2>
+    <a href="{% url 'solve:task2' %}"> task 2 </a>
+    <h2>if you need task 3</h2>
+    <a href="{% url 'solve:task3' %}"> task 3 </a>
+    <h2>if you need cv</h2>
+    <a href="{% url 'solve:cv' %}"> cv </a>
+</body>
+</html>
