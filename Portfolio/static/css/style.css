@@ -1,0 +1,316 @@
+/* Global Styles */
+body {
+    font-family: 'Open-sans', sans-serif;
+    margin: 0;
+    padding: 30px; /* Add padding around the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full page height */
+}
+
+/* Fixed Size Card */
+.fixed-size-card {
+    width: 500px; /* Set the fixed width */
+    height: 300px; /* Set the fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 20px; /* Add margin below the navbar */
+    display: block; /* Change display to block for vertical alignment */
+}
+
+.navbar-nav {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 10px; /* Add space between navigation items */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0f2d4e; /* Dark blue color for the navbar links */
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 10px; /* Add padding around the navbar links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Active navbar link */
+.navbar-nav .nav-item.active .nav-link {
+    color: #0f2d4e; /* Dark blue color for active link */
+    font-weight: light;
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #636363; /* Grey color when hovering over the links */
+}
+
+/* Add underline for active item */
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0f2d4e; /* Dark blue underline */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item.active .nav-link::after {
+    width: 100%; /* The underline grows to 100% when hovered or active */
+}
+
+/* Navbar toggler (hamburger menu) */
+.navbar-toggler {
+    border-color: #0f2d4e; /* Dark blue border for hamburger menu */
+}
+
+.navbar-toggler-icon {
+    background-color: #0f2d4e; /* Dark blue hamburger menu color */
+}
+
+/* Header Section */
+header {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add margin below the header */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px; /* Add margin below the main heading */
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #777;
+    margin-bottom: 20px; /* Add margin below the subheading */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px; /* Add margin below the paragraph */
+}
+
+header .btn {
+    background-color: #0f2d4e; /* Dark blue background for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Add margin around the buttons */
+}
+
+header .btn:hover {
+    background-color: #0a1f36; /* Darker blue for hover effect */
+}
+
+/* Footer Section */
+footer {
+    background-color: #056ede; /* Dark blue footer */
+    color: white; /* White text color */
+    padding: 10px 5px; /* Reduced padding for a smaller footer */
+    text-align: center;
+    margin-top: 20px; /* Reduced margin above the footer */
+    position: relative; /* Position relative for additional styling */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem; /* Reduced font size */
+    margin-bottom: 5px; /* Reduced margin below paragraphs */
+}
+
+footer a {
+    color: white; /* White text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 5px; /* Reduced margin between links */
+}
+
+footer a:hover {
+    color: #636363; /* Grey color on hover */
+}
+
+footer .social-icons {
+    margin-top: 10px; /* Reduced margin above social icons */
+}
+
+footer .social-icons a {
+    color: white; /* White text color */
+    font-size: 1.2rem; /* Reduced icon size */
+    margin: 0 5px; /* Reduced margin between icons */
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #636363; /* Grey color on hover */
+}
+
+/* Cards Section */
+.card {
+    background-color: #ffffff; /* White background */
+    width: 80%; /* Specific width */
+    max-width: 800px; /* Maximum width */
+    margin: 20px auto; /* Center the card and add margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Center text inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move the card up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+}
+
+.card-body {
+    padding: 20px; /* Add padding inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Main Heading */
+h1, h2, p {
+    text-align: center; /* Center text horizontally */
+    margin: 0; /* Removes any default margin */
+    padding: 20px; /* Adds padding for spacing */
+    max-width: 80%; /* Adjusts the maximum width of the text */
+    margin-left: auto; /* Centers the text horizontally */
+    margin-right: auto; /* Centers the text horizontally */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.75rem; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Add margin below the subheading */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Style for the buttons */
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #0f2d4e; /* Dark blue background */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #636363; /* Grey color on hover */
+}
+
+/* Custom View CV button */
+.btn-demo, .btn-linkedin {
+    background-color: #0f2d4e; /* Dark blue background */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure buttons are inline */
+    margin: 10px; /* Add margin around the buttons */
+}
+
+.btn-demo:hover, .btn-linkedin:hover {
+    background-color: #636363; /* Grey color on hover */
+}
+
+.fab {
+    margin-right: 10px;
+    font-size: 1.5rem; /* Larger icon */
+}
+
+/* Custom LinkedIn button */
+.btn-linkedin {
+    display: inline-flex; /* Ensure buttons are inline */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-linkedin i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Icon styling */
+.fab {
+    font-size: 1.5rem;
+}
+
+#about h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px; /* Margin to separate the heading from the paragraph */
+    font-weight: bold; /* Make the font bold */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
