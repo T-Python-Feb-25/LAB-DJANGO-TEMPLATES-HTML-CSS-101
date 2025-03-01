@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>                 
+<body>          
+<h1> Welcome To My Page </h1>
+    
+    <br>
+    <h2>My hobbies</h2>
+    <ul>
+        <li>Playing Padel</li>
+        <li>Watch a movie</li>
+        <li>Traveling</li>
+        <li>Cooking</li>
+    </ul>
+    <br>
+    <h2>My Favorite Links</h2>
+    <ul>
+        <li><a href="https://premierpadel.com/en"target="_blank">Premier Padel</a></li>
+        <li><a href="https://alhilal.com/bp/en" target="_blank">Alhilal Club</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+    </ul>
+    <br>
+    
+    <h2>My Favorite Football Team</h2>
+    <h3> Alhilal Club:-</h3>
+
+    <img src="{% static 'images/club.jpg' %}" width="300"/>
+
+    <p>Al Hilal Saudi Football Club, commonly known as Al Hilal, is one of the most successful and prestigious football clubs in Asia.</p>
+    <p>Founded in 1957 and based in Riyadh, Saudi Arabia, the club has a rich history of dominance in both domestic and international competitions. </p>
+    <p>Al Hilal holds the record for the most Saudi Pro League titles, along with multiple King's Cup, Crown Prince Cup, and Super Cup victories.</p>
+    <p>Internationally, the club has won several AFC Champions League titles, making it one of the most decorated teams in Asia.</p>
+    <p> Known for its passionate fan base and star-studded squad, Al Hilal continues to be a powerhouse in football, attracting top talents from around the world.</p>
+
+    <br>
+    <h2>Contact Me</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <br>
+    <input type="submit">
+</body>
+</html>
