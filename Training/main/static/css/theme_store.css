@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  /* padding: 2rem 12rem; */
+  padding: 2rem 4rem;
+  display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-size: 1.5rem;
+}
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .links a {
+  color: black;
+  text-decoration: none;
+}
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 3rem;
+  background-image: url("/static/images/phone-covers.png");
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: calc(75vh);
+}
+.top-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.top-content h1 {
+  font-size: 4rem;
+  width: 75%;
+  text-align: center;
+  font-weight: 100;
+}
+.top-content .top-content-utility {
+  display: flex;
+  gap: 1.5rem;
+}
+.top-content .top-content-utility a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.light {
+  background-color: rgba(192, 192, 192, 0.3);
+  color: black;
+}
+.botton-anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(160, 160, 160);
+  font-size: 1.3rem;
+  gap: 0.5rem;
+}
+.botton-anchor span {
+  transition: all 0.25s ease-in;
+
+}
+.botton-anchor:hover span {
+  transform: translateY(50%);
+
+}
+.botton-anchor:hover {
+  color: red;
+}
+.botton-anchor h6 {
+  font-weight: 100;
+}
+.play {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.play span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.play h6 {
+  font-size: 1rem;
+}
+.bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.bottom-content .info {
+  max-width: 700px;
+}
+.bottom-content .info h3 {
+  margin-bottom: 15px;
+}
+.bottom-content .info p {
+  margin-bottom: 10px;
+  color: rgba(160, 160, 160);
+}
+.bottom-content .info button {
+  cursor: pointer;
+}
+.bottom-content .img img {
+  width: 300px;
+}

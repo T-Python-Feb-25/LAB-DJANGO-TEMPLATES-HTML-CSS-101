@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f1f5f9;
+}
+h1 {
+  padding-bottom: 10px;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: solid 1px #333;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+.sec-header {
+  color: #DAA520;
+  padding: 0px 30px;
+  margin-bottom: 0px;
+}
+.colors li {
+  padding: 5px 30px;
+  color: #333;
+  position: relative;
+}
+.colors li::before {
+  content: "-";
+  position: absolute;
+  left: 20px;
+}
+.links li{
+  position: relative;
+  padding: 5px 30px;
+  color: #333;
+}
+.links li::before {
+  content: "-";
+  position: absolute;
+  left: 20px;
+}
+.links li a {
+  color: #333;
+}
+.football-team {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 30px;
+  margin-top: 10px;
+}
+.football-team img {
+  border-radius: 10px;
+}
+.football-team p {
+  color: #333;
+  letter-spacing: 1px;
+}
+table {
+  width: 400px;
+  margin: 10px 30px;
+  border-spacing: 0px;
+}
+table tr th, 
+table tr td {
+  border: 1px solid #333;
+  width: 50%;
+  color: #333;
+  background-color: #ffe8ae;
+  padding: 5px;
+}
+form {
+  margin: 10px 30px;
+}
+form div {
+  margin-bottom: 10px;
+}
+form div input {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #eee;
+  outline: none;
+  border-radius: 5px;
+}
+form div textarea {
+  border: 2px solid #eee;
+  width: 300px;
+  height: 60px;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+}
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #DAA520;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

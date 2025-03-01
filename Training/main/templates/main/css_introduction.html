@@ -1,0 +1,90 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <title>Css Introduction </title>
+</head>
+<body>
+  <h1>This Page is for my favorite things</h1>
+  <!-- Colors -->
+  <h2 class="sec-header">My Favorite Colors</h2>
+  <ul class="colors">
+    <li>Black</li>
+    <li>Blue</li>
+    <li>Dark Blue</li>
+    <li>Dark Green</li>
+  </ul>
+  <!-- Links For Learnning Front-End -->
+  <h2 class="sec-header">Perfect Places To Learn Front-End On Youtube</h2>
+  <ul class="links">
+    <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji">HTML</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe">CSS</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv">JS</a></li>
+  </ul> 
+  <!-- My Football Team -->
+  <h2 class="sec-header">Al Ittihad</h2>
+  <div class="football-team">
+    <img src="/static/images/download.png" alt="Not Found">
+    <p>
+      Al Ittihad, founded in 1927, is one of Saudi Arabia’s most successful and historic football clubs. Based in Jeddah, the club has a massive and passionate fanbase, often referred to as "The Tigers". Al Ittihad has won multiple Saudi Pro League titles and is one of the few clubs in Asia to have won the AFC Champions League back-to-back, achieving this historic feat in 2004 and 2005.
+
+The club plays its home matches at the King Abdullah Sports City Stadium, known as "The Shining Jewel," which hosts some of the most electrifying atmospheres in Saudi and Asian football. Over the years, Al Ittihad has produced and signed top talents, contributing significantly to both Saudi and Asian football.
+
+With fierce rivalries, particularly against Al Hilal and Al Ahli, the club is part of some of the most intense football clashes in the region. Despite facing financial and managerial challenges in certain periods, Al Ittihad remains one of the most resilient and competitive teams, always striving to reclaim its place at the top of Saudi and continental football.
+    </p>
+  </div>
+  <h2 class="sec-header">My Skills</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Progress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>90%</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>70%</td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>60%</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Contact Form -->
+  <h2 class="sec-header">Contact us</h2>
+  <form>
+    <div>
+      <label for="name">Enter Your Name:</label>
+      <br>
+      <input type="text" id="name">
+    </div>
+    <div>
+      <label for="email">Enter Your Email:</label>
+      <br>
+      <input type="email" id="email">
+    </div>
+    <div>
+      <label for="message">Enter Your Message:</label>
+      <br>
+      <textarea id="message"></textarea>
+    </div>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+  </form>
+
+
+</body>
+</html>
