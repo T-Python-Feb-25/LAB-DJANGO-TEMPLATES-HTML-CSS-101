@@ -38,4 +38,8 @@ section  p{
 .contactinfo{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imgpro{
+    max-width: 15rem;
 }

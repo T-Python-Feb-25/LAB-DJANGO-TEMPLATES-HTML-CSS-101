@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    margin: 2rem 4rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 1.2rem;
+    flex-wrap: wrap;
+
+}
+.navbutton{
+    justify-content: space-evenly;
+}
+.navbutton a{
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+.navbutton button{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding:0.5rem 1rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/phone-covers.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    min-height: 80vh;
+    text-align: center;
+    justify-content: space-between;
+}
+.howitworks a{
+    display: flex;
+    
+
+
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    gap: 1rem;
+    
+}
+.btn button{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding:0.5rem 1rem;
+
+}
+.navname{
+    font-weight: bold;
+    font-size:2rem ;
+}
+.head h2{
+    display: flex;
+    font-size: 4rem;
+    font-weight: 100;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* centers the element within its container */
+
+}
+.howitworks{
+    margin-bottom: 2rem;
+}
+.below{
+    display: flex;
+    margin: 2rem ;
+    flex-direction: row;
+    margin-top: 0.1rem;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.below button{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding:0.5rem 1rem;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.left button{
+    width: 10rem;
+}
+.imgright{
+    max-height: 20rem;
+}
+.right{
+    display: flex;
+    margin-left: 10rem;
+}

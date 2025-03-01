@@ -16,3 +16,6 @@ def ai_revolution_view(request:HttpRequest):
 
 def careers_cv_view(request:HttpRequest):
     return render(request,"main/cv.html")
+
+def theme_store_view(request:HttpRequest):
+    return render(request,"main/themestore.html")
