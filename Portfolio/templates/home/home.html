@@ -1,0 +1,34 @@
+{% load static %}
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaf's Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work, skills, and projects.</p>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home:about' %}">About Me</a></li>
+                <li><a href="{% url 'home:projects' %}">Projects</a></li>
+                <li><a href="{% url 'home:contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Overview</h2>
+        <p>Hi, I'm Elaf, a Full Stack Developer passionate about building web applications!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Elaf Alshanqiti</p>
+    </footer>
+</body>
+</html>
