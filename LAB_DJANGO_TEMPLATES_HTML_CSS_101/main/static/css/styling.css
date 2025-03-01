@@ -1,0 +1,77 @@
+
+
+h1{
+    color: chocolate;
+    text-align: center;
+    font-style: italic;
+}
+h2{
+    color: darkgreen;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold";
+
+}
+h3{
+    color: darkolivegreen;
+    text-align: left;
+    font-family: "Arial Rounded MT Bold";
+}
+h4{
+    color: darkred;
+    text-align: left;
+    font-family: "Times New Roman";
+
+}
+h5{
+    background: aqua;
+    color: black;
+    font-family: "Arial Rounded MT Bold";
+    font-style: italic;
+}
+a:link{
+    color: darkred;
+}
+a:visited{
+    color: darkgreen;
+}
+a:hover{
+    color: hotpink;
+    font-style: italic;
+}
+a:active{
+    color: blueviolet;
+}
+h6{
+    color: white;
+    background: darkred;
+    text-align: left;
+    font-family: "Times New Roman";
+
+}
+p{
+    font-family: "Times New Roman";
+    font-size: 20px ;
+}
+images{
+
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: blue;
+}
+th,td{
+    text-align: center;
+}
+
+table {
+    width: 50%;
+}
+textarea,button{
+    align-items: center;
+}
+img{
+    width: 50%;
+    height: 10%;
+
+}

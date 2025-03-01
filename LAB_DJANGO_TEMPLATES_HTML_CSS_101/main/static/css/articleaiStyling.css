@@ -1,0 +1,52 @@
+
+
+#copyWrite{
+    font-size: small;
+}
+img {
+    width: 20%;
+    height: 40%;
+    border: 10px solid transparent;
+    padding: 15px;
+
+}
+.quotation {
+    font-style: italic;
+}
+body{
+    display: flex;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background: wheat;
+}
+.wrapper{
+    display: flex;
+}
+a:link{
+    color: darkred;
+}
+a:visited{
+    color: darkgreen;
+}
+a:hover{
+    color: hotpink;
+    font-style: italic;
+}
+a:active{
+    color: blueviolet;
+}
+
+section{
+    text-align:left ;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: black;
+    padding-bottom: 20px;
+}
