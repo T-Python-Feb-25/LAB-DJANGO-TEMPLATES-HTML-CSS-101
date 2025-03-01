@@ -1,58 +1,177 @@
-/* General Body Styling */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Open Sans', sans-serif; /* Softer, smooth font */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Navigation Bar Styling */
+/* Navbar Styling */
 nav {
-    background-color: #4e4caf; /* Blue background */
-    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
+.navbar-light .navbar-brand img {
+    width: 50px;
+    height: 50px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0f2d4e; /* Dark blue color for the navbar links */
+    transition: color 0.3s ease;
+    position: relative;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+/* Active navbar link */
+.navbar-nav .nav-item.active .nav-link {
+    color: #0f2d4e; /* Dark blue color for active link */
+    font-weight: light;
 }
 
-/* Header Styling */
+/* Navbar link hover effect */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #636363; /* Grey color when hovering over the links */
+}
+
+/* Add underline for active item */
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0f2d4e; /* Dark blue underline */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item.active .nav-link::after {
+    width: 100%; /* The underline grows to 100% when hovered or active */
+}
+
+/* Navbar toggler (hamburger menu) */
+.navbar-toggler {
+    border-color: #0f2d4e; /* Dark blue border for hamburger menu */
+}
+
+.navbar-toggler-icon {
+    background-color: #0f2d4e; /* Dark blue hamburger menu color */
+}
+
+/* Header Section */
 header {
-    display: flex;
-    justify-content: space-between;  /* Distribute logo to the left and text to the center */
-    align-items: center;  /* Vertically center the content */
-    padding: 20px 50px;  /* Padding to adjust space */
-    background-color: #4e4caf;
-    color: white;
-}
-
-header img.logo {
-    width: 50px;  /* Logo size */
-    height: auto;
-    border-radius: 50%;  /* Circular logo (optional) */
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    flex-grow: 1;  /* This ensures the title takes up remaining space */
-    text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
 }
 
-footer {
+header h2 {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+header .btn {
+    background-color: #0f2d4e; /* Dark blue background for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #0a1f36; /* Darker blue for hover effect */
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    background-color: #f8f8f8;
     text-align: center;
-    padding: 10px;
-    background-color: #4e4caf;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0f2d4e; /* Dark blue footer */
     color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Cards Section */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
 }

@@ -1,34 +1,12 @@
-{% load static %}
-<!-- templates/home/projects.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Full Stack Developer Portfolio</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About Me</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/contact/">Contact</a></li>
-        </ul>
-    </nav>
+{% extends "home/base.html" %}
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-            <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-            <li><a href="https://github.com/yourusername/project3">Project 3</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Elaf Alshanqiti. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+{% block content %}
+<section id="projects" class="container mt-5">
+    <h2>My Projects</h2>
+    <ul>
+        <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a></li>
+        <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a></li>
+        <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3</a></li>
+    </ul>
+</section>
+{% endblock %}

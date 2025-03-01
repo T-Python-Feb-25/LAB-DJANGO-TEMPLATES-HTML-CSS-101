@@ -1,34 +1,24 @@
-{% load static %}
-<!-- home.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elaf's Portfolio</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my work, skills, and projects.</p>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home:about' %}">About Me</a></li>
-                <li><a href="{% url 'home:projects' %}">Projects</a></li>
-                <li><a href="{% url 'home:contact' %}">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section>
-        <h2>Overview</h2>
-        <p>Hi, I'm Elaf, a Full Stack Developer passionate about building web applications!</p>
-    </section>
+{% extends "home/base.html" %}
 
-    <footer>
-        <p>&copy; 2025 Elaf Alshanqiti</p>
-    </footer>
-</body>
-</html>
+{% block content %}
+    <section class="intro">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t js-fullheight">
+                        <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                            <!-- Main Heading -->
+                            <p><h1>Hello!
+                                I'm Elaf Alshanqiti, a Full Stack Developer with a passion for web technologies.</h1>
+                            </p>
+                                <a class="btn btn-primary btn-lg btn-demo" href="https://www.canva.com/design/DAGgeIeZSPY/SC58JM3Hn0Uc08pU63fmlw/edit?utm_content=DAGgeIeZSPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">View CV</a>
+                                <a class="btn btn-primary btn-lg btn-learn" href="https://www.linkedin.com/in/elaf-alshanqiti/" target="_blank">LinkedIn Profile</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

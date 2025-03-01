@@ -1,24 +1,7 @@
-{% load static %}
-<!-- templates/home/contact.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Full Stack Developer Portfolio</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About Me</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/contact/">Contact</a></li>
-        </ul>
-    </nav>
+{% extends "home/base.html" %}
 
-    <section id="contact">
+{% block content %}
+    <section id="contact" class="container mt-5">
         <h2>Contact Me</h2>
         <form action="/submit-form" method="post">
             <label for="name">Name:</label>
@@ -33,9 +16,4 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+{% endblock %}
