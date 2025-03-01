@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <title>My Hobbies</title>
+</head>
+<body>
+
+    <h1>My Favorite Hobbies</h1>
+    <p>I love spending my free time doing these activities:</p>
+
+    <ul>
+        <li> Reading novels and books</li>
+        <li> Cooking</li>
+        <li>horseback riding</li>
+        <li>Exercising and going to the gym</li>
+    </ul>
+
+    <h2>Check out my favorite websites:</h2>
+    <ul>
+        <li><a href="https://www.goodreads.com" target="_blank">Goodreads - Books</a></li>
+        <li><a href="https://cooking.nytimes.com/" target="_blank">Cooking - recipes</a></li>
+        <li><a href="https://chloeting.com/program/2022/get-fit-and-moving-challenge#google_vignette" target="_blank">sports</a></li>
+    </ul>
+    <a href="{% url 'main:css_introduction' %}">Back to Home</a>
+
+
+
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>
