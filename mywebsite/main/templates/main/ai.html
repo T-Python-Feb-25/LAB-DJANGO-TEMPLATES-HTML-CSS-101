@@ -1,17 +1,21 @@
 
 {% load static %}
 {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
 <h1>🤖 AI & Machine Learning</h1>
 <p>This page contains information about Artificial Intelligence and Machine Learning.</p>
 
 
-<img src="Robot.jpg" 
-alt="AI Image" 
-class="img-fluid">
+{% load static %}
+<img src="{% static 'css/img/Robot.jpg' %}" alt="AI Image" class="img-fluid">
+
+
 
 
 <h2>🎥 AI Introduction Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ePf9rue1Ao" frameborder="0" allowfullscreen></iframe>
+<iframe width="300" height="315" src="https://www.youtube.com/embed/2ePf9rue1Ao" frameborder="0" allowfullscreen></iframe>
 
 <a href="{% url 'main:home' %}" class="btn btn-secondary">🏡 Back to Home</a>
 {% endblock %}
+
