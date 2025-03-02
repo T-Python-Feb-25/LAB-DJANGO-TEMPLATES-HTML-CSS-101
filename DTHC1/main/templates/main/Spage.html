@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style2.css" rel="stylesheet" />
+    <title>CTS-V</title>
+</head>
+<body>
+
+
+    <div class="intro">Cadillac</div>
+    <div class="logo">
+        <a href="">
+            <img src="{% static 'images/CadiLogo.svg' %}" />
+        </a>
+    </div>
+
+
+    <div class="menu">
+        <a href="#engine">Engine and power ⇂</a>
+        <a href="#measurements">Measurements ⇂</a>
+        <a href="#security">Security Features ⇂</a>
+        <button class="button">BUY NOW</button>
+    </div>
+
+
+
+    <div class="photo1">
+        <a>
+            <img src="{% static 'images/ctsv2017.jpeg' %}" />
+        </a>
+    </div>
+    
+    <div class="text1" id="engine">
+        <h3 class="text111">Engine and power</h3>
+            <ul>
+                <li>Engine Capacity (L): 6.2 </li>
+                <li>Cylinders: 8 </li>
+                <li>Drive Type: Rear Wheel Drive </li>
+                <li>Fuel Tank Capacity (L): 72 </li>
+                <li>(Fuel Economy) L/100km: 13.8</li>
+                <li>Fuel Type: Gasoline</li>
+                <li>Engine Power (HP): 640</li>
+                <li>Torque (Nm): 855</li>
+                <li>Transmission: Automatic</li>
+                <li>Maximum Speed ​​(km/h): 320</li>
+                <li>Number of Seats: 5 Seats</li>
+            </ul>
+            <a class="photo2">
+                <img src="{% static 'images/CtsvENG.jpeg' %}"/>
+            </a>
+    </div>
+
+    <div class="text2" id="measurements">
+        <h3>Measurements</h3>
+            <ul>
+                <li>Length - (meters): 5.019</li>
+                <li>Width - (meters): 1.834</li>
+                <li>Height - (meters): 1.453</li>
+                <li>Wheelbase - (meters): 2.911</li>
+                <li>Trunk capacity - (liters): 388</li>
+            </ul>
+            <a>
+                <img src="{% static 'images/CtsvDoors.jpeg' %}"/>
+            </a>
+    </div>
+
+    <div class="text3" id="security">
+        <h3>Security Features</h3>
+            <ul>
+                <li>Electronic Brakeforce Distribution EBD</li>
+                <li>Dynamic Damper Control</li>
+                <li>Brake Assist BA</li>
+                <li>ABS Anti-lock Braking System</li>
+                <li>cceleration Control for Skids</li>
+                <li>Advanced Air Bag System (AABS)</li>
+                <li>Curve Assist</li>
+                <li>Anti-Theft Alarm</li>
+            </ul>
+            <a class="photo3">
+                <img src="{% static 'images/CtsvWheels.jpeg' %}"/>
+            </a>
+    </div>
+
+    <div class="text4">
+        <table>
+            <tr>
+                <h2>Prices</h2>
+                <h3>Specifications</h3>
+                <th>Full |</th>
+                <th>Med |</th>
+                <th>Standard  |</th>
+            </tr>
+            <tr>
+                <td>350K RS</td>
+                <td>300K RS</td>
+                <td>250K RS</td>
+            </tr>
+        </table>
+        <br>
+        <a class="photo4">
+            <img src="{% static 'images/CtsvInside.jpeg' %}"/>
+
+        </a>
+    </div>
+
+    <div class="text5">
+        <h2>🏎 Do not hesitate to buy, take advantage of the opportunity and be the first to own...🥇</h2>
+        <h1>🇺🇸⭐️ Cadillac CTS-V ⭐️🇺🇸</h1>
+    </div>
+
+</body>
+</html>

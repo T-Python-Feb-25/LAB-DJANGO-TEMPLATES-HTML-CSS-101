@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    padding: 2rem 12rem;
+}      
+
+.logo{
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+a{
+    color: rgb(111, 210, 207);
+    text-decoration: none;
+}
+
+.btn{
+    background-color: black;
+    color: rgb(111, 210, 207);
+    border-radius: 10px ;
+    border: none;
+    padding: 1rem 1rem;
+}
