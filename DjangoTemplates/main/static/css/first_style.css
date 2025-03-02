@@ -1,0 +1,89 @@
+body {
+    font-family: 'Sigmar';
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+p {
+    font-size: 18px;
+}
+
+.ul1, .ol1 {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.ul1 li, .ol1 li {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    display:block;
+    width: fit-content;
+    text-align: center;
+}
+
+img.postion {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+#t1 {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+#t1 td {
+    border: 1px solid #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
