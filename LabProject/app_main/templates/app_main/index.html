@@ -1,0 +1,80 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm Place</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #FAF3E0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        
+        img {
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            color: #8B5E3C;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: block;
+            background-color: #D2A679;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #b88658;
+        }
+
+        .guest {
+            color: #8B5E3C;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'img/logo.jpg' %}" alt="Logo">
+        <h1>Welcome to Warm Place</h1>
+        <a href="#" class="btn">Log In</a>
+        <a href="#" class="btn">Register Now</a>
+        <a href="menu.html" class="guest">Continue as a Guest</a>
+    </div>
+</body>
+</html>

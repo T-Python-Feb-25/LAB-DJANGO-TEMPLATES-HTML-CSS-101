@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warm place</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        main{
+            padding: 2rem 12rem ;
+            display: flex;
+            flex-direction: column;
+            column-gap: 5rem;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+
+        }
+        p{
+            text-align: center;
+        }
+        a{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="main">
+        <img src="/static/img/logo.jpg" alt="">
+         <p>Welcome to <samp>warm place</samp></p>
+         <div>
+            <button class="log">Log in</button>
+            <button class="reg">Register Now</button>
+            <a href="">Continue as a Guest</a>
+         </div>
+
+    </main>
+    
+</body>
+</html>
