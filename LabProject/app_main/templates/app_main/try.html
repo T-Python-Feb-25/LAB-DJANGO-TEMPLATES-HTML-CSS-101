@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Store</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            padding: 2rem 12rem ;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5rem;
+            
+            
+        }
+        .logo{
+            font-size: 1.5rem;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .right-nav{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            border-radius: 2rem;
+            border: none;
+            padding: 1rem 3rem;
+        }
+        .tc{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            justify-items: center;
+            align-items: center;
+            background-image: url('/static/img/phone-covers.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+        .tc h1{
+            font-size: 4rem;
+            width: 70%;
+            text-align: center;
+            font-weight: 100;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <strong class="logo">Theme Store</strong>
+
+            <div class="right-nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">How it Works</a>
+                <a href="">contact</a> 
+                <button class="btn">Try for Free</button>              
+            </div>
+        </nav>
+        <main>
+            <section class="tc">
+                <h1>Best Themes For Your Smartphone</h1>
+                <div class="">
+                    <a href="" class="btn">Get Started</a>
+                    <a href="" class="btn">How to set up</a>
+                </div>
+
+            </section>
+            
+        </main>
+    </div>
+    
+</body>
+</html>

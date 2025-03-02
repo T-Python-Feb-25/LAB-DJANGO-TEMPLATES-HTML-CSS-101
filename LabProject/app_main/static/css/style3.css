@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #5C3D2E;
+    text-align: center;
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+.btn {
+    background-color: #D2A679;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #C28F5C;
+}
+
+
+.menu-container {
+    padding: 20px;
+}
+
+.drinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.drink-card {
+    background-color: #F4E6D7;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.drink-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.drink-details {
+    padding: 20px;
+}

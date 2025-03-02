@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f1e4;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #8B4513;
+            margin-bottom: 15px;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .category {
+            padding: 8px 15px;
+            background: #D2A679;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .category.active {
+            background: #8B4513;
+        }
+        .drinks {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .drink-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .drink-card img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #8B4513;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h2>What do you like to drink today?</h2>
+        <div class="categories">
+            <span class="category active">Coffee</span>
+            <span class="category">Tea</span>
+            <span class="category">Matcha</span>
+        </div>
+        <div class="drinks">
+            <div class="drink-card">
+                <img src="/static/img/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>34.00 SAR</p>
+            </div>
+            <div class="drink-card">
+                <img src="/static/img/coffee-latte.jpg" alt="Coffee Latte">
+                <h3>Coffee Latte</h3>
+                <p>38.00 SAR</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
