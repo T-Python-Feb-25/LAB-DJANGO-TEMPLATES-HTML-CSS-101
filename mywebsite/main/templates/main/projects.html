@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h1>📂 My Projects</h1>
+<p>This is the projects page.</p>
+
+<div class="container mt-5">
+    <h1 class="text-center">🚀 My Projects</h1>
+    <p class="text-center">Here are some of the projects I've worked on:</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">🔥 Civil Defense Safety Tracker</h5>
+                    <p class="card-text">A system for tracking safety data.</p>
+                    <a href="{% url 'main:project_detail' project_id=1 %}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">📝 To-Do List App</h5>
+                    <p class="card-text">A simple app to manage daily tasks.</p>
+                    <a href="{% url 'main:project_detail' project_id=2 %}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">🌍 Personal Portfolio</h5>
+                    <p class="card-text">A website showcasing my work and skills.</p>
+                    <a href="{% url 'main:project_detail' project_id=3 %}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a href="{% url 'main:home' %}" class="btn btn-secondary">🏡 Back to Home</a>
+</div>
+
+{% endblock %}

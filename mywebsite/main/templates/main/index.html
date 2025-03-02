@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% extends 'main/base.html' %}
+
+{% block content %}
+<h2>📌 What can you find here?</h2>
+<ul>
+    <li><a href="{% url 'main:about' %}">Learn more about me</a></li>
+    <li><a href="{% url 'main:contact' %}">Get in touch</a></li>
+    <li><a href="{% url 'main:projects' %}">Check out my projects</a></li>
+</ul>
+
+<img src="{% static 'css/images/panda.jpg' %}" alt="Cute Panda">
+{% endblock %}
+
+
+</body>
+</html>
